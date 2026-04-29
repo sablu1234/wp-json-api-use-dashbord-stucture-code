@@ -1,0 +1,186 @@
+/* General Styles */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4c3 0%, #dcedc8 100%);
+    padding: 20px;
+}
+
+
+/* Container Styles */
+
+.container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    text-align: left;
+}
+
+
+/* Heading Styles */
+
+.container h2 {
+    margin-bottom: 1.5rem;
+    color: #333333;
+}
+
+
+/* Form Input Styles */
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="file"],
+.container select,
+.container textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+
+/* Button Styles */
+
+.container button,
+.container .create-post-btn {
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    background: linear-gradient(135deg, #aed581 0%, #263676 100%);
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: inline-block;
+}
+
+.container button:hover,
+.container .create-post-btn:hover {
+    background: linear-gradient(135deg, #81c784 0%, #aed581 100%);
+}
+
+
+/* Back Button Styles */
+
+.back-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #aed581 0%, #263676 100%);
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background: linear-gradient(135deg, #ff7043 0%, #ff8a65 100%);
+}
+
+
+/* Specific Container Styles */
+
+.login-container,
+.create-post-container,
+.list-post-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.login-container {
+    width: 36%;
+}
+
+.create-post-container textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+
+/* Table Styles */
+
+.list-post-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.list-post-container th,
+.list-post-container td {
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+.list-post-container th {
+    background-color: #f2f2f2;
+}
+
+
+/* Action Buttons */
+
+.list-post-container .action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.list-post-container .action-buttons button,
+.list-post-container .action-buttons a {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.list-post-container .action-buttons .edit-btn {
+    background-color: #64b5f6;
+    color: #ffffff;
+}
+
+.list-post-container .action-buttons .delete-btn {
+    background-color: #e57373;
+    color: #ffffff;
+}
+
+.list-post-container .action-buttons .edit-btn:hover {
+    background: #42a5f5;
+}
+
+.list-post-container .action-buttons .delete-btn:hover {
+    background: #ef5350;
+}
+
+.error-alert {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8d7da;
+    /* Light red background for error messages */
+    color: #721c24;
+    /* Dark red text color */
+}
+
+.success-alert {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d4edda;
+    /* Light green background for success messages */
+    color: #155724;
+    /* Dark green text color */
+}
